@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: brain-task-deployment
+  labels:
+    app: brain-task
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: brain-task
+
+  template:
+    metadata:
+      labels:
+        app: brain-task
+
+    spec:
+      containers:
+      - name: brain-task-container
+        image: kubersid/brain-task-app:latest
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 80
