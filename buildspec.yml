@@ -1,0 +1,27 @@
+version: 0.2
+
+env:
+  variables:
+    IMAGE_NAME: kubersid/brain-task-app
+    IMAGE_TAG: latest
+
+phases:
+
+  pre_build:
+    commands:
+      - echo "Logging into Docker Hub..."
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+  build:
+    commands:
+      - echo "Building Docker image..."
+      - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+
+  post_build:
+    commands:
+      - echo "Pushing image to Docker Hub..."
+      - docker push $IMAGE_NAME:$IMAGE_TAG
+
+artifacts:
+  files:
+    - '**/*'
