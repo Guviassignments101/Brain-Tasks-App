@@ -1,33 +1,7 @@
 DevOps Practice Project – Dist Directory
 
-# Application-Deployment-1
-GitHub (Source)
-│
-▼
-CodePipeline
-│
-├── Source Stage  → Pulls code via GitHub App connection
-│
-├── Build Stage    → CodeBuild: docker build → push to Docker Hub
-│
-├── Test Stage     → CodeBuild: runs test/validation steps
-│
-└── Deploy Stage   → CodeBuild: kubectl apply → Amazon EKS
-│
-▼
-EKS Cluster (brain-cluster)
-│
-┌───────────┴───────────┐
-▼                       ▼
-Deployment (2 pods)      Service (LoadBalancer)
-brain-task-deployment    brain-task-service
-│                       │
-└───────────┬───────────┘
-▼
-Public URL (AWS ELB)
-│
-▼
-End Users / Browser
+<img width="1467" height="562" alt="image" src="https://github.com/user-attachments/assets/d1fcfb30-d3c3-4013-a8e0-83889cfb552c" />
+
 
 
 
