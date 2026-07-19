@@ -162,7 +162,6 @@ App logs
 <img width="1866" height="813" alt="image" src="https://github.com/user-attachments/assets/ed396143-8447-4e26-b9f5-75b57e6c3299" />
 <img width="1657" height="625" alt="image" src="https://github.com/user-attachments/assets/00c64f77-466f-4ae7-b131-836ffa6c4e82" />
 <img width="1737" height="762" alt="image" src="https://github.com/user-attachments/assets/aaed3db0-e121-4e15-99c2-0d5539460fd7" />
-<img width="1746" height="743" alt="image" src="https://github.com/user-attachments/assets/1e5bf70c-a416-442b-8992-ec8161a5db3a" />
 <img width="1677" height="653" alt="image" src="https://github.com/user-attachments/assets/319d0767-7348-4e3c-8806-1e36cd1b449f" />
 
 
